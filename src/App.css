@@ -1,38 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tituloCep{
+  color: rgb(85, 191, 240);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input{
+  width: 15vw;
+  height: 3vh;
+  margin: 10px;
+  padding: 0.5rem;
+  border: none;
+  background-color: rgb(212, 212, 212);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input:focus{
+  outline: 0;
+  background-color: rgb(212, 212, 212);
+}
+
+button{
+  width: 4vw;
+  height: 5.3vh;
+  background-color: rgb(85, 191, 240);
+  border: none;
+}
+
+.botao{
+  font-size: 1rem;
+  color: #fff;
+}
+
+.retorno{
+  padding: 1rem;
+  width: 55vw;
+  height: 25vh;
+  background-color: rgb(212, 212, 212);
+}
+
+.retornoCep{
+  color: rgb(56, 127, 221);
+}
+
+aside{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 15px;
+  padding: 1rem;
+  background-color: #fff;
+  border-style: solid;
+  border-color: rgb(85, 191, 240);
+  border-width: 1px;
 }
 
-.App-link {
-  color: #61dafb;
+.dadosEsquerda{
+  margin-right: 18vw;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dadosDireita{
+  text-align: left;
+}
+
+span{
+  color: black;
+  font-weight: bold;
 }
